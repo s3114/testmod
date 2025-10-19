@@ -1,0 +1,4 @@
+// 1.20.1	2025-10-19T19:48:27.4963856	Loot Tables
+7d9c15feb758bcc1120b0bcdee32ece0f131860c data/testmod/loot_tables/blocks/deepslate_hoge_ore.json
+32b0c3939ba597b72f55ade4c355aca9dcac0b7f data/testmod/loot_tables/blocks/hoge_block.json
+819ccf94f313115cde8e79909d66aa550fb3e309 data/testmod/loot_tables/blocks/hoge_ore.json

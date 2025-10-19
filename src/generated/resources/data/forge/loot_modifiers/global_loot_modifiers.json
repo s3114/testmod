@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "testmod:raw_hoge_from_ruined_portal",
+    "testmod:raw_hoge_from_sniffer_digging",
+    "testmod:raw_hoge_from_sus_sand",
+    "testmod:raw_hoge_from_zombie"
+  ],
+  "replace": false
+}

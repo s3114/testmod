@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_hoge": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "testmod:raw_hoge"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testmod:hoge_from_blasting_raw_hoge"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_hoge",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testmod:hoge_from_blasting_raw_hoge"
+    ]
+  },
+  "sends_telemetry_event": false
+}

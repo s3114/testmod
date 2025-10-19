@@ -1,0 +1,4 @@
+// 1.20.1	2025-10-19T20:56:58.5652603	Registries
+83757354f9d57d58b34bd8f7710567de34d9f965 data/testmod/forge/biome_modifier/add_hoge_ore.json
+18a33943a897ad276c4249d1a15758e64afec9b9 data/testmod/worldgen/configured_feature/hoge_ore.json
+862504ca4ba53968dec581423977d62b30048614 data/testmod/worldgen/placed_feature/ore_hoge.json

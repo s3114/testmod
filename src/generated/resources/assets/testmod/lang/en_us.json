@@ -1,0 +1,8 @@
+{
+  "block.testmod.deepslate_hoge_ore": "Deepslate Hoge Ore",
+  "block.testmod.hoge_block": "Hoge Block",
+  "block.testmod.hoge_ore": "Hoge Ore",
+  "creativetab.test_tab": "Test Tab",
+  "item.testmod.hoge": "Hoge",
+  "item.testmod.raw_hoge": "Raw Hoge"
+}

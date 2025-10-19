@@ -1,0 +1,10 @@
+// 1.20.1	2025-10-19T19:48:27.4978912	Block States: testmod
+777f5d8928ed67bffa09d7b1ce47a7bbb1a0dd62 assets/testmod/blockstates/deepslate_hoge_ore.json
+dad56385b832f06fe62d82e77851f7fbc496691f assets/testmod/blockstates/hoge_block.json
+3c783445ddfeb518951f7c2f5309c086ea4ba758 assets/testmod/blockstates/hoge_ore.json
+4425d4e7b8f21e6ba6e613578fac2f9542c05694 assets/testmod/models/block/deepslate_hoge_ore.json
+92c918038d8ad22f0893e343027567a8ee422e06 assets/testmod/models/block/hoge_block.json
+c014b6f545a9ba83aa1c29b39656c1f507112e03 assets/testmod/models/block/hoge_ore.json
+9f85675ff853e1c69cd632f7c643e2d6b7d6f7e2 assets/testmod/models/item/deepslate_hoge_ore.json
+e8c9bf06997a7ba97c89edab852f9c2ad949cc28 assets/testmod/models/item/hoge_block.json
+5e4080d802d36cc03a353130f9246f48ed8f069e assets/testmod/models/item/hoge_ore.json

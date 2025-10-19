@@ -1,0 +1,6 @@
+// 1.20.1	2025-10-19T19:04:17.9198367	Global Loot Modifiers : testmod
+46877c8fadd6ab880d079b467e11f1806b1faec5 data/forge/loot_modifiers/global_loot_modifiers.json
+ee8c35f7613be1b1b5201e585d64f6b89e5cf417 data/testmod/loot_modifiers/raw_hoge_from_ruined_portal.json
+a56180dee1b4a0ee2df81f0f5567b7cbc2cf06a7 data/testmod/loot_modifiers/raw_hoge_from_sniffer_digging.json
+7c2ab3997fe51a9e0c80bbf261bb9da278f0b7e1 data/testmod/loot_modifiers/raw_hoge_from_sus_sand.json
+df5e9f44c88b3213fc67c0be467598e578a285c3 data/testmod/loot_modifiers/raw_hoge_from_zombie.json

@@ -1,0 +1,8 @@
+{
+  "block.testmod.deepslate_hoge_ore": "深層Hoge鉱石",
+  "block.testmod.hoge_block": "Hogeブロック",
+  "block.testmod.hoge_ore": "Hoge鉱石",
+  "creativetab.test_tab": "テストタブ",
+  "item.testmod.hoge": "Hoge",
+  "item.testmod.raw_hoge": "生のHoge"
+}
