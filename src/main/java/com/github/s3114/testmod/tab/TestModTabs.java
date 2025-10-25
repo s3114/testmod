@@ -11,6 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+//TOOD https://www.youtube.com/watch?v=MXbD1lTJ6VE&list=PLAPcLbz_e0paoKtuFdTU-yHicajU8CEgI&index=19&t=502s
 public class TestModTabs {
     public static final DeferredRegister<CreativeModeTab> TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TestMod.MODID);
@@ -26,6 +27,11 @@ public class TestModTabs {
                         pOutput.accept(TestModBlocks.HOGE_BLOCK.get());
                         pOutput.accept(TestModBlocks.HOGE_ORE.get());
                         pOutput.accept(TestModBlocks.DEEPSLATE_HOGE_ORE.get());
+                        pOutput.accept(TestModBlocks.HOGE_LOG.get());
+                        pOutput.accept(TestModBlocks.HOGE_WOOD.get());
+                        pOutput.accept(TestModBlocks.HOGE_LEAVES.get());
+                        pOutput.accept(TestModBlocks.STRIPPED_HOGE_LOG.get());
+                        pOutput.accept(TestModBlocks.STRIPPED_HOGE_WOOD.get());
                     }))
                     .build());
 

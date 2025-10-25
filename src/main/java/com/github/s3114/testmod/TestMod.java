@@ -17,8 +17,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import org.slf4j.Logger;
 
-
-// TODO https://www.youtube.com/watch?v=kvHwqzwTsKI&t=245s
 @Mod(TestMod.MODID)
 public class TestMod {
     public static final String MODID = "testmod";

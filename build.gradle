@@ -85,6 +85,8 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
         }
 
         server {
@@ -113,6 +115,9 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven {url "https://www.cursemaven.com"}
+    maven {url 'https://maven.blamejared.com'}
+    flatDir {dir 'libs'}
     // Put repositories for dependencies here
     // ForgeGradle automatically adds the Forge maven and Maven Central for you
 
@@ -145,6 +150,18 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    implementation fg.deobf("curse.maven:jei-238222:7037120")
+    implementation fg.deobf("curse.maven:embeddium-908741:5681725")
+    implementation fg.deobf("curse.maven:emi-580555:6420945")
+    implementation fg.deobf("curse.maven:jade-324717:6855440")
+    implementation fg.deobf("curse.maven:neat-238372:5838485")
+    implementation fg.deobf("curse.maven:emi-trades-villager-trading-emi-plugin-735523:4901194")
+    implementation fg.deobf("curse.maven:emiffect-status-effects-emi-plugin-735528:4901311")
+    implementation fg.deobf("curse.maven:emi-loot-681783:6449092")
+    implementation fg.deobf("curse.maven:emi-enchanting-936713:5733124")
+    implementation fg.deobf("curse.maven:fzzy-config-1005914:7085017")
+    implementation fg.deobf("curse.maven:kotlin-for-forge-351264:5402061")
+    implementation fg.deobf("curse.maven:clumps-256717:5278538")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -198,7 +215,10 @@ publishing {
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+            url "https://cursemaven.com"
+            content {
+                includeGroup "curse.maven"
+            }
         }
     }
 }

@@ -1,6 +1,9 @@
 package com.github.s3114.testmod.block;
 
 import com.github.s3114.testmod.TestMod;
+import com.github.s3114.testmod.block.custom.TestModLeavesBlock;
+import com.github.s3114.testmod.block.custom.TestModLogBlock;
+import com.github.s3114.testmod.block.custom.TestModStrippableLogBlock;
 import com.github.s3114.testmod.item.TestModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -31,6 +34,20 @@ public class TestModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_HOGE_ORE = registerBlockItem("deepslate_hoge_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 
+    public static final RegistryObject<Block> STRIPPED_HOGE_LOG = registerBlockItem("stripped_hoge_log",
+            () -> new TestModLogBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).sound(SoundType.BONE_BLOCK)));
+
+    public static final RegistryObject<Block> STRIPPED_HOGE_WOOD = registerBlockItem("stripped_hoge_wood",
+            () -> new TestModLogBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).sound(SoundType.BONE_BLOCK)));
+
+    public static final RegistryObject<Block> HOGE_LOG = registerBlockItem("hoge_log",
+            () -> new TestModStrippableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.BONE_BLOCK),STRIPPED_HOGE_LOG));
+
+    public static final RegistryObject<Block> HOGE_WOOD = registerBlockItem("hoge_wood",
+            () -> new TestModStrippableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.BONE_BLOCK),STRIPPED_HOGE_WOOD));
+
+    public static final RegistryObject<Block> HOGE_LEAVES = registerBlockItem("hoge_leaves",
+            () -> new TestModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
     private static <T extends Block> RegistryObject<T> registerBlockItem(String name, Supplier<T> supplier) {
         RegistryObject<T> block = BLOCKS.register(name, supplier);
